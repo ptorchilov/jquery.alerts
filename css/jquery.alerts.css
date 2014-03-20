@@ -1,6 +1,6 @@
 #popup_container {
 	font-family: Arial, sans-serif;
-	font-size: 12px;
+	font-size: 13px;
 	min-width: 300px; /* Dialog will be no smaller than this */
 	max-width: 600px; /* Dialog will wrap after this width */
 	background: #FFF;
@@ -26,7 +26,7 @@
 }
 
 #popup_content.prompt {
-	background-image: url(images/help.gif);
+	background-image: url(new_help);
 }
 
 #popup_message {
@@ -40,23 +40,44 @@
 
 #popup_prompt {
 	margin: .5em 0em;
+	font-size: 13px;
+	font-family: Arial;
 }
 
 /* hacks */
 
 #popup_panel input{
-	color: #666;
+	color: #000;
 	margin: 0px;
 	padding: 2px;
 	display: inline;
 	border: 1px solid #999;
-	width: auto;
 	height: auto;
-	font-size: 12px;
-	background: #CCC url(images/title.gif) top repeat-x;
+	font-size: 13px;
+	font-family: Arial;
+	background: #CCC url(new_title) top repeat-x;
 	
 }
 
-#popup_panel input:focus{
-	border: 1px solid #999;
+/*#popup_panel input:focus{
+	border: 1px solid #000;
+}*/
+
+#popup_ok {
+	border-radius: 2px;	
+	width: 43px;
+}
+
+#popup_ok:focus {
+	border: 1px solid #000;
+	 
+}
+
+#popup_cancel { 
+	border-radius: 2px;
+	width: 64px;
+}
+
+#popup_cancel:focus { 
+	border: 1px solid #000; 
 }
